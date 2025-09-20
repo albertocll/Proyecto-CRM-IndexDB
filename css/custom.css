@@ -1,0 +1,75 @@
+/* ======================
+   Estilos personalizados NeoCRM
+   ====================== */
+
+/* Fuente base */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb; /* un gris más limpio que el bg-gray-200 */
+  color: #333;
+}
+
+/* Sidebar */
+aside h1 {
+  letter-spacing: 1px;
+}
+aside p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Navegación */
+aside nav a {
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border-radius: 6px;
+}
+
+/* Encabezados */
+h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Tabla de clientes */
+#listado-clientes tr:hover {
+  background-color: #f1f5f9; /* azul/gris claro en hover */
+}
+
+#listado-clientes td {
+  vertical-align: middle;
+}
+
+/* Zebra rows */
+#listado-clientes tr:nth-child(even) {
+  background-color: #fdfdfd;
+}
+
+/* Botones de acción */
+a.eliminar {
+  font-weight: bold;
+}
+a.eliminar:hover {
+  text-decoration: underline;
+}
+
+a.editar {
+  font-weight: bold;
+}
+a.editar:hover {
+  text-decoration: underline;
+}
+
+/* Toasts (alertas) */
+.alerta {
+  animation: fadein 0.3s ease, fadeout 0.3s ease 1.7s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to { opacity: 0; transform: translateY(-10px); }
+}
